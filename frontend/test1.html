@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .preview {
+            width: 60%;
+            min-height: 600px;
+            border: 5px solid red;
+            /* background-color: red; */
+            float: left;
+        }
+        .preview question {
+            width: 100%;
+            height: 300px;
+            /* border: 5px solid blue; */
+        }
+        .upload {
+            width: 30%;
+            min-height: 600px;
+            border: 5px solid blue;
+            float: right;
+        }
+        .upload input[type="file"] {
+            /* background-color: red; */
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="preview">
+        <h1>题目</h1>
+        <div>
+
+        </div>
+
+    </section>
+    <section class="upload">
+        <div>
+            <input type="file" accept="image/png,image/gif,image/jpg,image/jpeg" id="upload-btn" />
+            <a href="javascript: void(0)" rel="external nofollow"><i></i>上传题目</a>
+        </div>
+
+    </section>
+    <script>
+        var uploadBtn = document.getElementById('upload-btn');
+        var pv = document.getElementById('preview');
+
+        uploadBtn.onchange = function(e) {
+            setImagePreviews();
+        }
+        function setImagePreviews() {
+            
+
+        }
+    </script>
+</body>
+</html>
